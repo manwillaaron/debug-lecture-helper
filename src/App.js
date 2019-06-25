@@ -11,6 +11,7 @@ class App extends Component {
       vehicles: [],
       baseUrl: 'https://joes-autos.herokuapp.com/api/vehicles'
     }
+   
   }
 
   getAllVehicles() {
@@ -19,7 +20,7 @@ class App extends Component {
   }
 
   getOne() {
-    axios.get(this.state.baseUrl + '/id/1/')
+    axios.get(this.state.baseUrl + '/1/')
       .then(res => this.setState({ vehicles: res.data }))
   }
   getGreenVehicles() {
